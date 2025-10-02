@@ -19,59 +19,214 @@
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <!-- body start here -->
-  <body class="bg-black">
+  <body class="bg-black relative">
     <!-- header section starts here -->
-    <header class="flex justify-between items-center px-10 py-4">
-      <div class="flex flex-col justify-center items-center">
-        <div class="flex justify-center items-center gap-3">
-          <div class="nav-logo">
-            <img src="./images/logo_left.png" alt="" />
+    <header class="sticky top-0 z-50 bg-black">
+      <div
+        class="flex justify-between items-center flex-col md:flex-row lg:flex-row px-10 py-4"
+      >
+        <div class="flex flex-col justify-center items-center">
+          <div class="flex justify-center items-center gap-3">
+            <div class="nav-logo">
+              <img src="./images/logo_left.png" alt="" />
+            </div>
+            <div>
+              <h1 class="text-2xl text-[#FF921B]">Bodyshape</h1>
+            </div>
+            <div>
+              <img src="./images/logo_right.png" alt="" />
+            </div>
           </div>
-          <div>
-            <h1 class="text-2xl text-[#FF921B]">Bodyshape</h1>
-          </div>
-          <div>
-            <img src="./images/logo_right.png" alt="" />
-          </div>
+          <p class="text-sm text-[#FF921B80] text-center">
+            Unleash your inner athlete
+          </p>
         </div>
-        <p class="text-sm text-[#FF921B80] text-center">
-          Unleash your inner athlete
-        </p>
-      </div>
-      <div class="flex justify-center items-center gap-6">
-        <div>
-          <nav>
-            <ul class="flex justify-center items-center gap-6">
-              <li class="text-white border-b-2 border-[#FF921B] font-normal">
-                <a href="/">Home</a>
-              </li>
-              <li
-                class="text-white hover:border-b-2 border-[#FF921B] font-normal"
-              >
-                <a href="/">Services</a>
-              </li>
-              <li
-                class="text-white hover:border-b-2 border-[#FF921B] font-normal"
-              >
-                <a href="/">About</a>
-              </li>
-              <li
-                class="text-white hover:border-b-2 border-[#FF921B] font-normal"
-              >
-                <a href="/">Contacts</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <div class="navbar-btn">
-          <button
-            class="bg-gradient-to-r from-[#F66844] to-[#FF921B] text-white py-2 px-3"
-          >
-            Join Us
-          </button>
+        <div
+          class="flex justify-center items-center flex-col md:flex-row lg:flex-row gap-2 md:gap-6"
+        >
+          <div>
+            <nav>
+              <ul class="flex justify-center items-center gap-6">
+                <li class="text-white border-b-2 border-[#FF921B] font-normal">
+                  <a href="/">Home</a>
+                </li>
+                <li
+                  class="text-white hover:border-b-2 border-[#FF921B] font-normal"
+                >
+                  <a href="/">Services</a>
+                </li>
+                <li
+                  class="text-white hover:border-b-2 border-[#FF921B] font-normal"
+                >
+                  <a href="/">About</a>
+                </li>
+                <li
+                  class="text-white hover:border-b-2 border-[#FF921B] font-normal"
+                >
+                  <a href="/">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="navbar-btn">
+            <button
+              class="bg-gradient-to-r from-[#F66844] to-[#FF921B] rounded-sm md:rounded-none lg:rounded-none text-white py-2 px-3"
+            >
+              Join Us
+            </button>
+          </div>
         </div>
       </div>
     </header>
     <!-- header section end here -->
+    <!-- main section starts here -->
+    <main>
+      <!-- banner section starts here -->
+      <section
+        class="banner bg-banner md:min-h-screen bg-cover bg-center bg-no-repeat"
+      >
+        <div
+          class="content flex justify-center items-center flex-col relative z-20 mt-20 text-white md:bg-black lg:bg-black p-6 md:h-[460px] md:w-[500px]"
+        >
+          <h1 class="text-6xl mb-6">
+            Transform <br />
+            Your Body
+          </h1>
+          <p class="text-sm">
+            We are dedicated to helping you transform your <br />
+            body and mind through the power of fitness.
+          </p>
+          <div class="banner-btn mt-[30px] md:mt-[120px]">
+            <button
+              class="bg-gradient-to-r from-[#F66844] to-[#FF921B] hover:bg-none border-1 border-[#F66844] mr-6 py-3 px-4 md:px-8 rounded-sm"
+            >
+              Get Started
+            </button>
+            <button
+              class="py-3 px-4 md:px-5 rounded-sm border-1 border-[#F66844] hover:bg-gradient-to-r from-[#F66844] to-[#FF921B] hover:text-white"
+            >
+              <span class="text-[#F66844] animate-ping"
+                ><i class="fa-regular fa-circle-pause"></i
+              ></span>
+              Watch Reviews
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- banner section end here -->
+      <!-- fitness plan section starts here -->
+      <section>
+        <div
+          class="fitness-plan bg-[url('../images/roated_banner.png')] transform scale-y-[1] opacity-70 min-h-screen bg-cover bg-no-repeat p-10"
+        >
+          <div class="fitness-plan-title">
+            <h1 class="text-4xl text-white">
+              Fitness Plans & <span class="text-[#FF921B]">Nutritions</span>
+            </h1>
+          </div>
+          <div
+            class="cards grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 md:px-20 mt-20"
+          >
+            <!-- card 1 -->
+            <div class="card p-10 lg:border-r-2 border-[#FF921B]">
+              <div class="h-16 w-16 mx-auto mb-2">
+                <img src="./images/workout.png" alt="" />
+              </div>
+              <h3 class="text-white text-center text-[16px] mb-4">
+                Weight Loss
+              </h3>
+              <p class="text-white text-sm text-center">
+                Weight loss can have causes that aren't due to underlying
+                disease. Examples include dieting, exercise, malnutrition or
+                lack of access to food.
+              </p>
+            </div>
+
+            <!-- card 2 -->
+
+            <div class="card p-10 lg:border-r-2 border-[#FF921B]">
+              <div class="h-16 w-16 mx-auto mb-2">
+                <img src="./images/yoga.png" alt="" />
+              </div>
+              <h3 class="text-white text-center text-[16px] mb-4">
+                Classic Yoga
+              </h3>
+              <p class="text-white text-sm text-center">
+                The term "yoga" in the Western world often denotes a modern form
+                of Hatha yoga and a posture-based physical fitness,
+                stress-relief.
+              </p>
+            </div>
+
+            <!-- card 3 -->
+
+            <div class="card p-10">
+              <div class="h-16 w-16 mx-auto mb-2">
+                <img src="./images/bicycle.png" alt="" />
+              </div>
+              <h3 class="text-white text-center text-[16px] mb-4">Cycling</h3>
+              <p class="text-white text-sm text-center">
+                Cycling, also, when on a two-wheeled bicycle, called bicycling
+                or biking, is the use of cycles for transport, recreation,
+                exercise or sport.
+              </p>
+            </div>
+
+            <!-- card 4 -->
+
+            <div
+              class="card p-10 lg:border-t-2 border-[#FF921B] lg:border-r-2 border-[#FF921B]"
+            >
+              <div class="h-16 w-16 mx-auto mb-2">
+                <img src="./images/biceps.png" alt="" />
+              </div>
+              <h3 class="text-white text-center text-[16px] mb-4">
+                Body Building
+              </h3>
+              <p class="text-white text-sm text-center">
+                Bodybuilding is the use of progressive resistance exercise to
+                control and develop one's muscles by muscle hypertrophy for
+                aesthetic purposes.
+              </p>
+            </div>
+
+            <!-- card 5 -->
+
+            <div
+              class="card p-10 lg:border-t-2 border-[#FF921B] lg:border-r-2 border-[#FF921B]"
+            >
+              <div class="h-16 w-16 mx-auto mb-2">
+                <img src="./images/fitness.png" alt="" />
+              </div>
+              <h3 class="text-white text-center text-[16px] mb-4">
+                Musculation
+              </h3>
+              <p class="text-white text-sm text-center">
+                Weight training is a common type of strength training for
+                developing the strength, size of skeletal muscles and
+                maintenance of strength.
+              </p>
+            </div>
+
+            <!-- card 6 -->
+
+            <div class="card p-10 lg:border-t-2 border-[#FF921B]">
+              <div class="h-16 w-16 mx-auto mb-2">
+                <img src="./images/runner.png" alt="" />
+              </div>
+              <h3 class="text-white text-center text-[16px] mb-4">
+                Fitness Running
+              </h3>
+              <p class="text-white text-sm text-center">
+                Running is a method of terrestrial locomotion allowing humans
+                and other animals to move rapidly on foot.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- fitness plan section end here -->
+    </main>
+    <!-- main section end here -->
   </body>
 </html>
