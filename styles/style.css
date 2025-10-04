@@ -6,3 +6,6 @@ body {
 .bg-banner {
   background-image: url("../images/banner.png");
 }
+.bg-fitness {
+  background-image: url("../images/roated_banner.png");
+}
